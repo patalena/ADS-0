@@ -1,9 +1,8 @@
 #include <iostream>
 #include "alg.h"
 int gcd(int a, int b) {
-    int i;
     while (b != 0) {
-        i = b;
+        int i = b;
         b = a % b;
         a = i;
     }
